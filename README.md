@@ -1,5 +1,11 @@
-# birds
+# birds :bird:
 Generating birdsong with ML
+
+## Dependencies: 
+```
+conda install tensorflow
+pip install librosa==0.6.3 # must be > 0.5, but 0.7 had an error
+```
 
 ## Workflow: 
 1. `conda activate birds`
@@ -19,8 +25,3 @@ python generate.py --samples 16000 --wav_out_path=../generated_birdsong/generate
 ```
 - Note: 16,000 samples = 1 second
 
-## Dependencies: 
-```
-conda install tensorflow
-pip install librosa==0.6.3 # must be > 0.5, but 0.7 had an error
-```

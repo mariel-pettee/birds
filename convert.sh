@@ -8,5 +8,5 @@
 eval "$(conda shell.bash hook)"
 export PATH="/project/hep/demers/mnp3/miniconda3/bin:$PATH"
 conda activate birds
-source mp3-to-wav.sh Zonotrichiaalbicollis
+source mp3-to-wav.sh sparrow
 

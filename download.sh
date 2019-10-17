@@ -5,9 +5,9 @@
 #SBATCH --mem 15GB
 #SBATCH --output logs/download_%j.log
 
-# eval "$(conda shell.bash hook)"
-# export PATH="/project/hep/demers/mnp3/miniconda3/bin:$PATH"
-# conda activate birds
-# python -u xcdl.py Zonotrichia albicollis
+eval "$(conda shell.bash hook)"
+export PATH="/project/hep/demers/mnp3/miniconda3/bin:$PATH"
+conda activate birds
+python -u xcdl.py chickadee
 
-wget https://datashare.is.ed.ac.uk/bitstream/handle/10283/2651/VCTK-Corpus.zip -o vctk.log
+# wget https://datashare.is.ed.ac.uk/bitstream/handle/10283/2651/VCTK-Corpus.zip -o vctk.log
